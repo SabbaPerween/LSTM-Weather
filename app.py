@@ -9,8 +9,10 @@ from sklearn.preprocessing import MinMaxScaler
 
 # Load trained model
 # Load the trained model
-model = tf.keras.models.load_model('weather_forecasting.h5')
-
+model = tf.keras.models.load_model(
+    'weather_forecasting.h5',
+    custom_objects={'mse': tf.keras.metrics.MeanSquaredError}
+)
 # Load the encoders and scaler
 with open('scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
