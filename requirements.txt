@@ -1,4 +1,4 @@
-tensorflow==2.16.2
+tensorflow
 pandas 
 numpy 
 scikit-learn
@@ -10,4 +10,5 @@ nltk
 ipykernal
 pandas 
 openmeteo-requests 
+
 retry-requests
